@@ -6,12 +6,10 @@
 </head>
 <body>
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-		<a href="" class="navbar-brand">
-			Tugas
-		</a>
-		<div class="navbar-nav">
-			<a href="" class="nav-link active">Home</a>
-			<a href="" class="nav-link">Tambah Data</a>
+		<a href="#" class="navbar-brand">Tugas</a>
+		<div class="navbar-nav mr-auto">
+			<a href="<?= site_url('mahasiswa/index')?>" class="nav-link active">Home</a>
+			<a href="<?= site_url('mahasiswa/tambah')?>" class="nav-link">Tambah Data</a>
 		</div>
 		<div class="navbar-nav ml-auto">
 			<a href="" class="nav-link active">cambe</a>

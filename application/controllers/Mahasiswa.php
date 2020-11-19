@@ -28,6 +28,20 @@ class Mahasiswa extends CI_Controller {
 
 	public function tambah()
 	{
-		$this->load->view('add_mhs');
+		$this->load->view('mahasiswa/v_tambah');
+	}
+
+	public function proses_tambah()
+	{
+//		var_dump($this->input->post());
+		$data = [
+			'nim' => $this->input->post('txtnim'),
+			'nama' => $this->input->post('txtnama'),
+			'alamat' => $this->input->post('txtalamat')
+		];
+
+		$this->M_mahasiswa->simpanData($data);
+
+		redirect('mahasiswa/index');
 	}
 }
